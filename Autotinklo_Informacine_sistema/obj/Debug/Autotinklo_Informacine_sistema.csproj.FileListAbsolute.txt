@@ -12,3 +12,20 @@ c:\Users\Tadas\Documents\Visual Studio 2015\Projects\Autotinklo_Informacine_sist
 c:\Users\Tadas\Documents\Visual Studio 2015\Projects\Autotinklo_Informacine_sistema\bin\Debug\EntityFramework.xml
 c:\Users\Tadas\Documents\Visual Studio 2015\Projects\Autotinklo_Informacine_sistema\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Tadas\documents\visual studio 2015\Projects\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.PadalinysAdd.resources
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\bin\Debug\Autotinklo_Informacine_sistema.exe.config
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.exe
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.pdb
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\bin\Debug\Autotinklo_Informacine_sistema.exe
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\bin\Debug\Autotinklo_Informacine_sistema.pdb
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\bin\Debug\EntityFramework.dll
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\bin\Debug\EntityFramework.xml
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.csprojResolveAssemblyReference.cache
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.Form1.resources
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.PadalinysAdd.resources
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.ParduotuvėAdd.resources
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.Properties.Resources.resources
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.csproj.GenerateResource.Cache
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.AutodalisAdd.resources
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.DarbuotojasAdd.resources

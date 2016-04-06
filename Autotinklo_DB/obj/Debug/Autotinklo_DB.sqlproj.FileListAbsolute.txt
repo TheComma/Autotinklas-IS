@@ -3,3 +3,12 @@ c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_DB\bin\Debug\Aut
 c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_DB\bin\Debug\Autotinklo_DB.pdb
 c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_DB\obj\Debug\Autotinklo_DB.dll
 c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_DB\obj\Debug\Autotinklo_DB.pdb
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_DB\bin\Debug\Autotinklo_DB.dacpac
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_DB\bin\Debug\Autotinklo_DB.dll
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_DB\bin\Debug\Autotinklo_DB.pdb
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_DB\obj\Debug\Model.xml
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_DB\obj\Debug\refactor.xml
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_DB\obj\Debug\postdeploy.sql
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_DB\obj\Debug\predeploy.sql
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_DB\obj\Debug\Autotinklo_DB.dll
+C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_DB\obj\Debug\Autotinklo_DB.pdb

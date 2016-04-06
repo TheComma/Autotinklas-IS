@@ -1,5 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="AutotinklasDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Autodalies_uzsakymas">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kiekis" Type="int" />
+    <Property Name="fk_autodalis" Type="int" />
+    <Property Name="fk_uzsakymas" Type="int" />
+  </EntityType>
+  <EntityType Name="Autodalis">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pavadinimas" Type="nvarchar" MaxLength="50" />
+    <Property Name="kaina" Type="float" />
+    <Property Name="gamintojas" Type="nvarchar" MaxLength="50" />
+    <Property Name="fk_parduotuve" Type="int" />
+  </EntityType>
+  <EntityType Name="Automobilis">
+    <Key>
+      <PropertyRef Name="valstybinis_numeris" />
+    </Key>
+    <Property Name="valstybinis_numeris" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="kebulo_tipas" Type="nvarchar" MaxLength="50" />
+    <Property Name="kebulo_numeris" Type="nvarchar" MaxLength="50" />
+    <Property Name="metai" Type="nvarchar" MaxLength="4" />
+    <Property Name="fk_modelis" Type="int" />
+  </EntityType>
+  <EntityType Name="Darbuotojas">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pavarde" Type="nvarchar(max)" />
+    <Property Name="vardas" Type="nvarchar(max)" />
+    <Property Name="adresas" Type="nvarchar(max)" />
+    <Property Name="telefonas" Type="nvarchar" MaxLength="50" />
+    <Property Name="fk_Padalinys" Type="int" />
+  </EntityType>
+  <EntityType Name="Gedimas">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pavadinimas" Type="nvarchar(max)" />
+    <Property Name="fk_uzsakymas" Type="int" />
+  </EntityType>
   <EntityType Name="Login">
     <Key>
       <PropertyRef Name="id" />
@@ -9,6 +57,21 @@
     <Property Name="password" Type="varchar" MaxLength="50" />
     <Property Name="role" Type="int" />
   </EntityType>
+  <EntityType Name="Marke">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pavadinimas" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Modelis">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pavadinimas" Type="nvarchar" MaxLength="50" />
+    <Property Name="fk_marke" Type="int" />
+  </EntityType>
   <EntityType Name="Padalinys">
     <Key>
       <PropertyRef Name="id" />
@@ -17,8 +80,235 @@
     <Property Name="adresas" Type="nvarchar(max)" />
     <Property Name="miestas" Type="nvarchar(max)" />
   </EntityType>
+  <EntityType Name="Pakaitinis_automobilis">
+    <Key>
+      <PropertyRef Name="valstybinis_numeris" />
+    </Key>
+    <Property Name="valstybinis_numeris" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="metai" Type="nvarchar" MaxLength="4" />
+    <Property Name="degalu_kiekis" Type="int" />
+    <Property Name="fk_modelis" Type="int" />
+  </EntityType>
+  <EntityType Name="Parduotuve">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pavadinimas" Type="nvarchar" MaxLength="50" />
+    <Property Name="miestas" Type="nvarchar" MaxLength="50" />
+    <Property Name="adresas" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Saskaita">
+    <Key>
+      <PropertyRef Name="saskaitos_numeris" />
+    </Key>
+    <Property Name="saskaitos_numeris" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="data" Type="date" />
+    <Property Name="suma" Type="float" />
+    <Property Name="fk_uzsakymas" Type="int" />
+  </EntityType>
+  <EntityType Name="Uzsakymas">
+    <Key>
+      <PropertyRef Name="uzsakymo_nr" />
+    </Key>
+    <Property Name="uzsakymo_nr" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="data" Type="date" />
+    <Property Name="kliento_vardas" Type="nvarchar" MaxLength="50" />
+    <Property Name="kliento_pavarde" Type="nvarchar" MaxLength="50" />
+    <Property Name="kliento_telefonas" Type="nvarchar" MaxLength="50" />
+    <Property Name="fk_meistras" Type="int" />
+    <Property Name="fk_automobilis" Type="nvarchar" MaxLength="6" />
+    <Property Name="fk_pakaitinis_automobilis" Type="nvarchar" MaxLength="6" />
+  </EntityType>
+  <Association Name="FK_Autodalies_uzsakymas_Autodalis">
+    <End Role="Autodalis" Type="Self.Autodalis" Multiplicity="0..1" />
+    <End Role="Autodalies_uzsakymas" Type="Self.Autodalies_uzsakymas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Autodalis">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Autodalies_uzsakymas">
+        <PropertyRef Name="fk_autodalis" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Autodalies_uzsakymas_Uzsakymas">
+    <End Role="Uzsakymas" Type="Self.Uzsakymas" Multiplicity="0..1" />
+    <End Role="Autodalies_uzsakymas" Type="Self.Autodalies_uzsakymas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzsakymas">
+        <PropertyRef Name="uzsakymo_nr" />
+      </Principal>
+      <Dependent Role="Autodalies_uzsakymas">
+        <PropertyRef Name="fk_uzsakymas" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Autodalis_Parduotuve">
+    <End Role="Parduotuve" Type="Self.Parduotuve" Multiplicity="0..1" />
+    <End Role="Autodalis" Type="Self.Autodalis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Parduotuve">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Autodalis">
+        <PropertyRef Name="fk_parduotuve" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Darbuotojas_Padalinys">
+    <End Role="Padalinys" Type="Self.Padalinys" Multiplicity="0..1" />
+    <End Role="Darbuotojas" Type="Self.Darbuotojas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Padalinys">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Darbuotojas">
+        <PropertyRef Name="fk_Padalinys" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gedimas_Uzsakymas">
+    <End Role="Uzsakymas" Type="Self.Uzsakymas" Multiplicity="0..1" />
+    <End Role="Gedimas" Type="Self.Gedimas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzsakymas">
+        <PropertyRef Name="uzsakymo_nr" />
+      </Principal>
+      <Dependent Role="Gedimas">
+        <PropertyRef Name="fk_uzsakymas" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Modelis_Marke">
+    <End Role="Marke" Type="Self.Marke" Multiplicity="0..1" />
+    <End Role="Modelis" Type="Self.Modelis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Marke">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Modelis">
+        <PropertyRef Name="fk_marke" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pakaitinis_automobilis_Modelis">
+    <End Role="Modelis" Type="Self.Modelis" Multiplicity="0..1" />
+    <End Role="Pakaitinis_automobilis" Type="Self.Pakaitinis_automobilis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Modelis">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Pakaitinis_automobilis">
+        <PropertyRef Name="fk_modelis" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Saskaita_Uzsakymas">
+    <End Role="Uzsakymas" Type="Self.Uzsakymas" Multiplicity="0..1" />
+    <End Role="Saskaita" Type="Self.Saskaita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uzsakymas">
+        <PropertyRef Name="uzsakymo_nr" />
+      </Principal>
+      <Dependent Role="Saskaita">
+        <PropertyRef Name="fk_uzsakymas" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Uzsakymas_Automobilis">
+    <End Role="Automobilis" Type="Self.Automobilis" Multiplicity="0..1" />
+    <End Role="Uzsakymas" Type="Self.Uzsakymas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Automobilis">
+        <PropertyRef Name="valstybinis_numeris" />
+      </Principal>
+      <Dependent Role="Uzsakymas">
+        <PropertyRef Name="fk_automobilis" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Uzsakymas_Darbuotojas">
+    <End Role="Darbuotojas" Type="Self.Darbuotojas" Multiplicity="0..1" />
+    <End Role="Uzsakymas" Type="Self.Uzsakymas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Darbuotojas">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Uzsakymas">
+        <PropertyRef Name="fk_meistras" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Uzsakymas_Pakaitinis_automobilis">
+    <End Role="Pakaitinis_automobilis" Type="Self.Pakaitinis_automobilis" Multiplicity="0..1" />
+    <End Role="Uzsakymas" Type="Self.Uzsakymas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pakaitinis_automobilis">
+        <PropertyRef Name="valstybinis_numeris" />
+      </Principal>
+      <Dependent Role="Uzsakymas">
+        <PropertyRef Name="fk_pakaitinis_automobilis" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="AutotinklasDBModelStoreContainer">
+    <EntitySet Name="Autodalies_uzsakymas" EntityType="Self.Autodalies_uzsakymas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Autodalis" EntityType="Self.Autodalis" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Automobilis" EntityType="Self.Automobilis" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Darbuotojas" EntityType="Self.Darbuotojas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Gedimas" EntityType="Self.Gedimas" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Marke" EntityType="Self.Marke" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Modelis" EntityType="Self.Modelis" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Padalinys" EntityType="Self.Padalinys" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pakaitinis_automobilis" EntityType="Self.Pakaitinis_automobilis" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Parduotuve" EntityType="Self.Parduotuve" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Saskaita" EntityType="Self.Saskaita" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Uzsakymas" EntityType="Self.Uzsakymas" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Autodalies_uzsakymas_Autodalis" Association="Self.FK_Autodalies_uzsakymas_Autodalis">
+      <End Role="Autodalis" EntitySet="Autodalis" />
+      <End Role="Autodalies_uzsakymas" EntitySet="Autodalies_uzsakymas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Autodalies_uzsakymas_Uzsakymas" Association="Self.FK_Autodalies_uzsakymas_Uzsakymas">
+      <End Role="Uzsakymas" EntitySet="Uzsakymas" />
+      <End Role="Autodalies_uzsakymas" EntitySet="Autodalies_uzsakymas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Autodalis_Parduotuve" Association="Self.FK_Autodalis_Parduotuve">
+      <End Role="Parduotuve" EntitySet="Parduotuve" />
+      <End Role="Autodalis" EntitySet="Autodalis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Darbuotojas_Padalinys" Association="Self.FK_Darbuotojas_Padalinys">
+      <End Role="Padalinys" EntitySet="Padalinys" />
+      <End Role="Darbuotojas" EntitySet="Darbuotojas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gedimas_Uzsakymas" Association="Self.FK_Gedimas_Uzsakymas">
+      <End Role="Uzsakymas" EntitySet="Uzsakymas" />
+      <End Role="Gedimas" EntitySet="Gedimas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Modelis_Marke" Association="Self.FK_Modelis_Marke">
+      <End Role="Marke" EntitySet="Marke" />
+      <End Role="Modelis" EntitySet="Modelis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pakaitinis_automobilis_Modelis" Association="Self.FK_Pakaitinis_automobilis_Modelis">
+      <End Role="Modelis" EntitySet="Modelis" />
+      <End Role="Pakaitinis_automobilis" EntitySet="Pakaitinis_automobilis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Saskaita_Uzsakymas" Association="Self.FK_Saskaita_Uzsakymas">
+      <End Role="Uzsakymas" EntitySet="Uzsakymas" />
+      <End Role="Saskaita" EntitySet="Saskaita" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Uzsakymas_Automobilis" Association="Self.FK_Uzsakymas_Automobilis">
+      <End Role="Automobilis" EntitySet="Automobilis" />
+      <End Role="Uzsakymas" EntitySet="Uzsakymas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Uzsakymas_Darbuotojas" Association="Self.FK_Uzsakymas_Darbuotojas">
+      <End Role="Darbuotojas" EntitySet="Darbuotojas" />
+      <End Role="Uzsakymas" EntitySet="Uzsakymas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Uzsakymas_Pakaitinis_automobilis" Association="Self.FK_Uzsakymas_Pakaitinis_automobilis">
+      <End Role="Pakaitinis_automobilis" EntitySet="Pakaitinis_automobilis" />
+      <End Role="Uzsakymas" EntitySet="Uzsakymas" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

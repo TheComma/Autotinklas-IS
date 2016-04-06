@@ -1,22 +1,136 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="AutotinklasDBModelStoreContainer" CdmEntityContainer="AutotinklasDBEntities2">
+    <EntitySetMapping Name="Autodalies_uzsakymas">
+      <EntityTypeMapping TypeName="AutotinklasDBModel.Autodalies_uzsakymas">
+        <MappingFragment StoreEntitySet="Autodalies_uzsakymas">
+          <ScalarProperty Name="fk_uzsakymas" ColumnName="fk_uzsakymas" />
+          <ScalarProperty Name="fk_autodalis" ColumnName="fk_autodalis" />
+          <ScalarProperty Name="kiekis" ColumnName="kiekis" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Autodalis">
+      <EntityTypeMapping TypeName="AutotinklasDBModel.Autodalis">
+        <MappingFragment StoreEntitySet="Autodalis">
+          <ScalarProperty Name="fk_parduotuve" ColumnName="fk_parduotuve" />
+          <ScalarProperty Name="gamintojas" ColumnName="gamintojas" />
+          <ScalarProperty Name="kaina" ColumnName="kaina" />
+          <ScalarProperty Name="pavadinimas" ColumnName="pavadinimas" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Automobilis">
+      <EntityTypeMapping TypeName="AutotinklasDBModel.Automobilis">
+        <MappingFragment StoreEntitySet="Automobilis">
+          <ScalarProperty Name="fk_modelis" ColumnName="fk_modelis" />
+          <ScalarProperty Name="metai" ColumnName="metai" />
+          <ScalarProperty Name="kebulo_numeris" ColumnName="kebulo_numeris" />
+          <ScalarProperty Name="kebulo_tipas" ColumnName="kebulo_tipas" />
+          <ScalarProperty Name="valstybinis_numeris" ColumnName="valstybinis_numeris" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Darbuotojas">
+      <EntityTypeMapping TypeName="AutotinklasDBModel.Darbuotojas">
+        <MappingFragment StoreEntitySet="Darbuotojas">
+          <ScalarProperty Name="fk_Padalinys" ColumnName="fk_Padalinys" />
+          <ScalarProperty Name="telefonas" ColumnName="telefonas" />
+          <ScalarProperty Name="adresas" ColumnName="adresas" />
+          <ScalarProperty Name="vardas" ColumnName="vardas" />
+          <ScalarProperty Name="pavarde" ColumnName="pavarde" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Gedimas">
+      <EntityTypeMapping TypeName="AutotinklasDBModel.Gedimas">
+        <MappingFragment StoreEntitySet="Gedimas">
+          <ScalarProperty Name="fk_uzsakymas" ColumnName="fk_uzsakymas" />
+          <ScalarProperty Name="pavadinimas" ColumnName="pavadinimas" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Login">
       <EntityTypeMapping TypeName="AutotinklasDBModel.Login">
         <MappingFragment StoreEntitySet="Login">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="username" ColumnName="username" />
-          <ScalarProperty Name="password" ColumnName="password" />
           <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Marke">
+      <EntityTypeMapping TypeName="AutotinklasDBModel.Marke">
+        <MappingFragment StoreEntitySet="Marke">
+          <ScalarProperty Name="pavadinimas" ColumnName="pavadinimas" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Modelis">
+      <EntityTypeMapping TypeName="AutotinklasDBModel.Modelis">
+        <MappingFragment StoreEntitySet="Modelis">
+          <ScalarProperty Name="fk_marke" ColumnName="fk_marke" />
+          <ScalarProperty Name="pavadinimas" ColumnName="pavadinimas" />
+          <ScalarProperty Name="id" ColumnName="id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Padalinys">
       <EntityTypeMapping TypeName="AutotinklasDBModel.Padalinys">
         <MappingFragment StoreEntitySet="Padalinys">
+          <ScalarProperty Name="miestas" ColumnName="miestas" />
+          <ScalarProperty Name="adresas" ColumnName="adresas" />
           <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pakaitinis_automobilis">
+      <EntityTypeMapping TypeName="AutotinklasDBModel.Pakaitinis_automobilis">
+        <MappingFragment StoreEntitySet="Pakaitinis_automobilis">
+          <ScalarProperty Name="fk_modelis" ColumnName="fk_modelis" />
+          <ScalarProperty Name="degalu_kiekis" ColumnName="degalu_kiekis" />
+          <ScalarProperty Name="metai" ColumnName="metai" />
+          <ScalarProperty Name="valstybinis_numeris" ColumnName="valstybinis_numeris" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parduotuve">
+      <EntityTypeMapping TypeName="AutotinklasDBModel.Parduotuve">
+        <MappingFragment StoreEntitySet="Parduotuve">
           <ScalarProperty Name="adresas" ColumnName="adresas" />
           <ScalarProperty Name="miestas" ColumnName="miestas" />
+          <ScalarProperty Name="pavadinimas" ColumnName="pavadinimas" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Saskaita">
+      <EntityTypeMapping TypeName="AutotinklasDBModel.Saskaita">
+        <MappingFragment StoreEntitySet="Saskaita">
+          <ScalarProperty Name="fk_uzsakymas" ColumnName="fk_uzsakymas" />
+          <ScalarProperty Name="suma" ColumnName="suma" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="saskaitos_numeris" ColumnName="saskaitos_numeris" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Uzsakymas">
+      <EntityTypeMapping TypeName="AutotinklasDBModel.Uzsakymas">
+        <MappingFragment StoreEntitySet="Uzsakymas">
+          <ScalarProperty Name="fk_pakaitinis_automobilis" ColumnName="fk_pakaitinis_automobilis" />
+          <ScalarProperty Name="fk_automobilis" ColumnName="fk_automobilis" />
+          <ScalarProperty Name="fk_meistras" ColumnName="fk_meistras" />
+          <ScalarProperty Name="kliento_telefonas" ColumnName="kliento_telefonas" />
+          <ScalarProperty Name="kliento_pavarde" ColumnName="kliento_pavarde" />
+          <ScalarProperty Name="kliento_vardas" ColumnName="kliento_vardas" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="uzsakymo_nr" ColumnName="uzsakymo_nr" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
