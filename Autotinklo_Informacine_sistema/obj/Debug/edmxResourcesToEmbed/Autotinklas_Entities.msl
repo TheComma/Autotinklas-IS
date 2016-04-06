@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AutotinklasDBModelStoreContainer" CdmEntityContainer="AutotinklasDBEntities2">
+    <EntitySetMapping Name="Login">
+      <EntityTypeMapping TypeName="AutotinklasDBModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="role" ColumnName="role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Padalinys">
+      <EntityTypeMapping TypeName="AutotinklasDBModel.Padalinys">
+        <MappingFragment StoreEntitySet="Padalinys">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="adresas" ColumnName="adresas" />
+          <ScalarProperty Name="miestas" ColumnName="miestas" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

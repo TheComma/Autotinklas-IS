@@ -1,0 +1,5 @@
+c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_DB\bin\Debug\Autotinklo_DB.dacpac
+c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_DB\bin\Debug\Autotinklo_DB.dll
+c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_DB\bin\Debug\Autotinklo_DB.pdb
+c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_DB\obj\Debug\Autotinklo_DB.dll
+c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_DB\obj\Debug\Autotinklo_DB.pdb

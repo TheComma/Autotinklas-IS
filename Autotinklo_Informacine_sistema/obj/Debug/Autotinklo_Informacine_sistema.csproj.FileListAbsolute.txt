@@ -1,0 +1,14 @@
+c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_Informacine_sistema\bin\Debug\Autotinklo_Informacine_sistema.exe.config
+c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.csprojResolveAssemblyReference.cache
+c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.Form1.resources
+c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.Properties.Resources.resources
+c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.csproj.GenerateResource.Cache
+c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_Informacine_sistema\bin\Debug\Autotinklo_Informacine_sistema.exe
+c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_Informacine_sistema\bin\Debug\Autotinklo_Informacine_sistema.pdb
+c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.exe
+c:\users\tadas\documents\visual studio 2015\Projects\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.pdb
+c:\Users\Tadas\Documents\Visual Studio 2015\Projects\Autotinklo_Informacine_sistema\bin\Debug\EntityFramework.dll
+c:\Users\Tadas\Documents\Visual Studio 2015\Projects\Autotinklo_Informacine_sistema\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\Tadas\Documents\Visual Studio 2015\Projects\Autotinklo_Informacine_sistema\bin\Debug\EntityFramework.xml
+c:\Users\Tadas\Documents\Visual Studio 2015\Projects\Autotinklo_Informacine_sistema\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tadas\documents\visual studio 2015\Projects\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.PadalinysAdd.resources
