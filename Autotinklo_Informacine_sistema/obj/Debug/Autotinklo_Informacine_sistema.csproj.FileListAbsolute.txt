@@ -29,3 +29,6 @@ C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\obj\Debug\A
 C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.csproj.GenerateResource.Cache
 C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.AutodalisAdd.resources
 C:\Users\Tadas\Desktop\Autotinklas-IS\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.DarbuotojasAdd.resources
+D:\Darbalaukis\Autotinklas-IS\Autotinklo_Informacine_sistema\bin\Debug\Autotinklo_Informacine_sistema.exe.config
+D:\Darbalaukis\Autotinklas-IS\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.exe
+D:\Darbalaukis\Autotinklas-IS\Autotinklo_Informacine_sistema\obj\Debug\Autotinklo_Informacine_sistema.pdb

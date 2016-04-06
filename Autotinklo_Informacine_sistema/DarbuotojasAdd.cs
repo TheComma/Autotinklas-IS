@@ -44,5 +44,10 @@ namespace Autotinklo_Informacine_sistema
                     c.Items.Add(p.adresas);                
             }
         }
+
+        private void DarbuotojasAdd_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
