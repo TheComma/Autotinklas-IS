@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutotinklasInformacinėSist
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AutotinklasDatabase", "AutotinklasDatabase\AutotinklasDatabase.sqlproj", "{9974FD8F-829E-43BE-8D61-ABD3F856752D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutotinklasUnitTests", "AutotinklasUnitTests\AutotinklasUnitTests.csproj", "{6E0524AD-0E3A-44E1-8E51-F95A5467753A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{9974FD8F-829E-43BE-8D61-ABD3F856752D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9974FD8F-829E-43BE-8D61-ABD3F856752D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9974FD8F-829E-43BE-8D61-ABD3F856752D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6E0524AD-0E3A-44E1-8E51-F95A5467753A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E0524AD-0E3A-44E1-8E51-F95A5467753A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E0524AD-0E3A-44E1-8E51-F95A5467753A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E0524AD-0E3A-44E1-8E51-F95A5467753A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

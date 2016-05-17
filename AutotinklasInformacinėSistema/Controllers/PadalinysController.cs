@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.ComponentModel.DataAnnotations;
 using AutotinklasInformacinėSistema;
 
 namespace AutotinklasInformacinėSistema.Controllers
@@ -48,6 +49,7 @@ namespace AutotinklasInformacinėSistema.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "id,adresas,miestas")] Padalinys padalinys)
         {
+           
             if (ModelState.IsValid)
             {
                 db.Padalinys.Add(padalinys);

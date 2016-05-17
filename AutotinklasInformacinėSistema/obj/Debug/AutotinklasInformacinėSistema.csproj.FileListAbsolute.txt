@@ -84,6 +84,7 @@ C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\Microso
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\Newtonsoft.Json.dll
+C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\nunit.framework.dll
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\System.Web.Helpers.dll
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\System.Web.Mvc.dll
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\System.Web.Optimization.dll
@@ -100,8 +101,9 @@ C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\Microso
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\Microsoft.ApplicationInsights.xml
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\System.Web.Helpers.xml
+C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\nunit.framework.xml
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\System.Web.Mvc.xml
+C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\System.Web.Helpers.xml
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\System.Web.Optimization.xml
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\System.Web.Razor.xml
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\System.Web.WebPages.xml
@@ -109,6 +111,6 @@ C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\System.
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\System.Web.WebPages.Razor.xml
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\Antlr3.Runtime.pdb
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\bin\Newtonsoft.Json.xml
-C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\obj\Debug\AutotinklasInformacinėSistema.csprojResolveAssemblyReference.cache
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\obj\Debug\AutotinklasInformacinėSistema.dll
 C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\obj\Debug\AutotinklasInformacinėSistema.pdb
+C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasInformacinėSistema\obj\Debug\AutotinklasInformacinėSistema.csprojResolveAssemblyReference.cache

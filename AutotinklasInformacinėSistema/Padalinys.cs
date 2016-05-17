@@ -23,8 +23,10 @@ namespace AutotinklasInformacinėSistema
     
         public int id { get; set; }
         [Required(ErrorMessage = "Būtina įvesti adresą")]
+        [StringLength(100, ErrorMessage = "{0} turi būti bent {2} simbolių ilgio.", MinimumLength = 3)]
         public string adresas { get; set; }
         [Required(ErrorMessage = "Būtina įvesti miestą")]
+        [StringLength(100, ErrorMessage = "{0} turi būti bent {2} simbolių ilgio.", MinimumLength = 3)]
         public string miestas { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
