@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="AutotinklasDatabase.dll" />
-			<Metadata Name="FileName" Value="C:\USERS\TADAS\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\AUTOTINKLASDATABASE\OBJ\DEBUG\AUTOTINKLASDATABASE.DLL" />
+			<Metadata Name="FileName" Value="C:\USERS\TADAS\DESKTOP\AUTOTINKLAS-IS\AUTOTINKLASDATABASE\OBJ\DEBUG\AUTOTINKLASDATABASE.DLL" />
 			<Metadata Name="AssemblyName" Value="AutotinklasDatabase" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="C:\Users\Tadas\Documents\Visual Studio 2015\Projects\AutotinklasDatabase\obj\Debug\AutotinklasDatabase.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\Users\Tadas\Desktop\Autotinklas-IS\AutotinklasDatabase\obj\Debug\AutotinklasDatabase.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>
