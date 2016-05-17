@@ -1,0 +1,75 @@
+2016.05.17 12:14:12	This log contains information about the import schema operation into project 'AutotinklasDatabase' on computer 'TADAS-PC' by user 'Tadas'.
+2016.05.17 12:14:13	Import of database schema has started.
+2016.05.17 12:14:55	Gathering database options
+2016.05.17 12:14:55	Gathering users
+2016.05.17 12:14:56	Gathering roles
+2016.05.17 12:14:56	Gathering application roles
+2016.05.17 12:14:56	Gathering role memberships
+2016.05.17 12:14:56	Gathering filegroups
+2016.05.17 12:14:56	Gathering full-text catalogs
+2016.05.17 12:14:56	Gathering assemblies
+2016.05.17 12:14:56	Gathering certificates
+2016.05.17 12:14:56	Gathering asymmetric keys
+2016.05.17 12:14:56	Gathering symmetric keys
+2016.05.17 12:14:56	Gathering encrypted symmetric keys
+2016.05.17 12:14:56	Gathering schemas
+2016.05.17 12:16:04	Gathering XML schema collections
+2016.05.17 12:16:04	Gathering user-defined data types
+2016.05.17 12:16:05	Gathering user-defined types
+2016.05.17 12:16:06	Gathering table types
+2016.05.17 12:16:07	Gathering unique keys for table types
+2016.05.17 12:16:08	Gathering primary keys for table types
+2016.05.17 12:16:08	Gathering check constraints for table types
+2016.05.17 12:16:09	Gathering default constraints for table types
+2016.05.17 12:16:09	Gathering partition functions
+2016.05.17 12:16:09	Gathering partition schemes
+2016.05.17 12:17:04	Gathering functions
+2016.05.17 12:17:06	Gathering encrypted functions
+2016.05.17 12:17:08	Gathering aggregates
+2016.05.17 12:18:57	Gathering procedures
+2016.05.17 12:19:00	Gathering encrypted procedures
+2016.05.17 12:19:10	Gathering tables
+2016.05.17 12:19:41	Gathering primary keys
+2016.05.17 12:19:42	Gathering unique constraints
+2016.05.17 12:19:44	Gathering foreign keys
+2016.05.17 12:19:46	Gathering default constraints
+2016.05.17 12:19:46	Gathering check constraints
+2016.05.17 12:19:47	Gathering views
+2016.05.17 12:19:49	Gathering encrypted views
+2016.05.17 12:19:51	Gathering indexes
+2016.05.17 12:19:52	Gathering statistics
+2016.05.17 12:19:53	Gathering full-text index stoplists
+2016.05.17 12:19:54	Gathering search property lists
+2016.05.17 12:19:55	Gathering search properties
+2016.05.17 12:19:56	Gathering full-text indexes
+2016.05.17 12:19:58	Gathering column store indexes
+2016.05.17 12:19:58	Gathering spatial indexes
+2016.05.17 12:19:59	Gathering XML indexes
+2016.05.17 12:20:00	Gathering encrypted triggers
+2016.05.17 12:20:00	Gathering triggers
+2016.05.17 12:20:01	Gathering encrypted and clr ddl triggers
+2016.05.17 12:20:01	Gathering ddl triggers
+2016.05.17 12:20:01	Gathering synonyms
+2016.05.17 12:20:37	Gathering defaults
+2016.05.17 12:20:38	Gathering data constraint uddt bindings
+2016.05.17 12:21:25	Gathering rules
+2016.05.17 12:21:25	Gathering data constraint uddt bindings
+2016.05.17 12:21:26	Gathering message types
+2016.05.17 12:21:27	Gathering queues
+2016.05.17 12:21:27	Gathering contracts
+2016.05.17 12:21:27	Gathering services
+2016.05.17 12:21:28	Gathering event notifications
+2016.05.17 12:21:28	Gathering remote service bindings
+2016.05.17 12:21:29	Gathering broker priorities
+2016.05.17 12:21:29	Gathering signatures
+2016.05.17 12:21:30	Gathering data compression options
+2016.05.17 12:21:30	Gathering sequence types
+2016.05.17 12:21:30	Gathering extended properties
+2016.05.17 12:21:40	Gathering credentials
+2016.05.17 12:21:40	Gathering logins
+2016.05.17 12:21:40	Gathering server audits
+2016.05.17 12:21:47	Scanning project for duplicate elements
+2016.05.17 12:21:48	Finished duplicate element processing
+2016.05.17 12:21:55	Finished importing database.
+2016.05.17 12:21:55	A summary of the import was saved to the following location: C:\Users\Tadas\Documents\Visual Studio 2015\Projects\AutotinklasDatabase\Import Schema Logs\AutotinklasDatabase_20160517091412.log
+2016.05.17 12:21:55	Click Finish to continue...

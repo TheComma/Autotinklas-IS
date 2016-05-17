@@ -1,0 +1,42 @@
+﻿@model AutotinklasInformacinėSistema.Saskaita
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Saskaita</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.suma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.suma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Uzsakymas.kliento_vardas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Uzsakymas.kliento_vardas)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.saskaitos_numeris }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

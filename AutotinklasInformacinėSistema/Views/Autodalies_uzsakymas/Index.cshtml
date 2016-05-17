@@ -1,0 +1,46 @@
+﻿@model IEnumerable<AutotinklasInformacinėSistema.Autodalies_uzsakymas>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Dalių kiekis")
+        </th>
+        <th>
+            @Html.DisplayName("Pavadinimas")
+        </th>
+        <th>
+            @Html.DisplayName("Užsakymo numeris")
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.kiekis)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Autodalis.pavadinimas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Uzsakymas.uzsakymo_nr)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
+@Html.ActionLink("Grįžti į užsakymus", "Index", "Uzsakymas")

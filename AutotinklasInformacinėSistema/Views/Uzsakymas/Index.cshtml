@@ -1,0 +1,78 @@
+﻿@model IEnumerable<AutotinklasInformacinėSistema.Uzsakymas>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Užsakymo numeris")
+        </th>
+        <th>
+            @Html.DisplayName("Užsakymo data")
+        </th>
+        <th>
+            @Html.DisplayName("Kliento vardas")
+        </th>
+        <th>
+            @Html.DisplayName("Kliento pavardė")
+        </th>
+        <th>
+            @Html.DisplayName("Kliento numeris")
+        </th>
+        <th>
+            @Html.DisplayName("Automobilis")
+        </th>
+        <th>
+            @Html.DisplayName("Dirbančio meistro pavardė")
+        </th>
+        <th>
+            @Html.DisplayName("Skirtos mašinos valstybinis numeris")
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.uzsakymo_nr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.data)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.kliento_vardas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.kliento_pavarde)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.kliento_telefonas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Automobilis.valstybinis_numeris)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Darbuotojas.pavarde)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pakaitinis_automobilis.valstybinis_numeris)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.uzsakymo_nr }) |
+            @Html.ActionLink("Details", "Details", new { id=item.uzsakymo_nr }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.uzsakymo_nr }) |
+            @Html.ActionLink("Gedimų valdymas","Index","Gedimas", new { id = item.uzsakymo_nr },null) |
+            @Html.ActionLink("Autodalių užsakymas", "Index", "Autodalies_uzsakymas", new { id = item.uzsakymo_nr }, null)
+        </td>
+    </tr>
+}
+
+</table>
+@Html.ActionLink("Grįžti į valdymą", "MainRoot", "Home")

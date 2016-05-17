@@ -1,0 +1,50 @@
+﻿@model AutotinklasInformacinėSistema.Autodalis
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Autodalis</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.pavadinimas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pavadinimas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kaina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kaina)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gamintojas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gamintojas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Parduotuve.pavadinimas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Parduotuve.pavadinimas)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

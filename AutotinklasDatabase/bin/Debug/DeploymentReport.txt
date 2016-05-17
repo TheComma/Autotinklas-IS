@@ -1,0 +1,40 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Autodalies_uzsakymas] (Table)
+       [dbo].[Autodalis] (Table)
+       [dbo].[Automobilis] (Table)
+       [dbo].[Darbuotojas] (Table)
+       [dbo].[Gedimas] (Table)
+       [dbo].[Login] (Table)
+       [dbo].[Marke] (Table)
+       [dbo].[Modelis] (Table)
+       [dbo].[Padalinys] (Table)
+       [dbo].[Pakaitinis_automobilis] (Table)
+       [dbo].[Parduotuve] (Table)
+       [dbo].[Saskaita] (Table)
+       [dbo].[Uzsakymas] (Table)
+       [dbo].[FK_Autodalies_uzsakymas_Autodalis] (Foreign Key)
+       [dbo].[FK_Autodalies_uzsakymas_Uzsakymas] (Foreign Key)
+       [dbo].[FK_Autodalis_Parduotuve] (Foreign Key)
+       [dbo].[FK_Automobilis_Modelis] (Foreign Key)
+       [dbo].[FK_Darbuotojas_Padalinys] (Foreign Key)
+       [dbo].[FK_Gedimas_Uzsakymas] (Foreign Key)
+       [dbo].[FK_Modelis_Marke] (Foreign Key)
+       [dbo].[FK_Pakaitinis_automobilis_Modelis] (Foreign Key)
+       [dbo].[FK_Pakaitinis_automobilis_Padalinys] (Foreign Key)
+       [dbo].[FK_Saskaita_Uzsakymas] (Foreign Key)
+       [dbo].[FK_Uzsakymas_Automobilis] (Foreign Key)
+       [dbo].[FK_Uzsakymas_Darbuotojas] (Foreign Key)
+       [dbo].[FK_Uzsakymas_Pakaitinis_automobilis] (Foreign Key)
+
+** Supporting actions

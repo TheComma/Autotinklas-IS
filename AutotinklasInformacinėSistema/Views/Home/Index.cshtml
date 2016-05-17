@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@model AutotinklasInformacinėSistema.Login
+<div class="blurredBGContainer">
+    <div class="container">
+        <div class="loginContainer">
+            <h1>Prisijungimas</h1>
+            <div class="loginForm blackBG">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    <fieldset>
+                        <div class="form-row">
+                            @Html.TextBoxFor(x => x.username, new { @class = "input-field" })
+                            @Html.Label("Vartotojo vardas")
+                        </div>
+                        <div class="form-row">
+                            @Html.PasswordFor(m => m.password, new { @class = "input-field" })
+                            @Html.Label("Slaptažodis")
+                        </div>
+                        <input type="submit" value="Prisijungti" class="btn btn-default" />
+                    </fieldset>
+                }
+            </div>
+        </div>
+    </div>
+</div>

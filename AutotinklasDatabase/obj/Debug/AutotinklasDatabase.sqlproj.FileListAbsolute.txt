@@ -1,0 +1,9 @@
+C:\Users\Tadas\Documents\Visual Studio 2015\Projects\AutotinklasDatabase\bin\Debug\AutotinklasDatabase.dacpac
+C:\Users\Tadas\Documents\Visual Studio 2015\Projects\AutotinklasDatabase\bin\Debug\AutotinklasDatabase.dll
+C:\Users\Tadas\Documents\Visual Studio 2015\Projects\AutotinklasDatabase\bin\Debug\AutotinklasDatabase.pdb
+C:\Users\Tadas\Documents\Visual Studio 2015\Projects\AutotinklasDatabase\obj\Debug\AutotinklasDatabase.dll
+C:\Users\Tadas\Documents\Visual Studio 2015\Projects\AutotinklasDatabase\obj\Debug\AutotinklasDatabase.pdb
+C:\Users\Tadas\Documents\Visual Studio 2015\Projects\AutotinklasDatabase\obj\Debug\Model.xml
+C:\Users\Tadas\Documents\Visual Studio 2015\Projects\AutotinklasDatabase\obj\Debug\refactor.xml
+C:\Users\Tadas\Documents\Visual Studio 2015\Projects\AutotinklasDatabase\obj\Debug\postdeploy.sql
+C:\Users\Tadas\Documents\Visual Studio 2015\Projects\AutotinklasDatabase\obj\Debug\predeploy.sql

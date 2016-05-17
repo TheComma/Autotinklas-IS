@@ -1,0 +1,50 @@
+﻿@model AutotinklasInformacinėSistema.Pakaitinis_automobilis
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pakaitinis_automobilis</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.metai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.metai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.degalu_kiekis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.degalu_kiekis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modelis.pavadinimas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modelis.Marke.pavadinimas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Padalinys.adresas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Padalinys.adresas)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.valstybinis_numeris }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

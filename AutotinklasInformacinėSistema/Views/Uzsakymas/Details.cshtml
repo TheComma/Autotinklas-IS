@@ -1,0 +1,74 @@
+﻿@model AutotinklasInformacinėSistema.Uzsakymas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Uzsakymas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kliento_vardas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kliento_vardas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kliento_pavarde)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kliento_pavarde)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kliento_telefonas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kliento_telefonas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Automobilis.kebulo_tipas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Automobilis.kebulo_tipas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Darbuotojas.pavarde)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Darbuotojas.pavarde)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pakaitinis_automobilis.metai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pakaitinis_automobilis.metai)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.uzsakymo_nr }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

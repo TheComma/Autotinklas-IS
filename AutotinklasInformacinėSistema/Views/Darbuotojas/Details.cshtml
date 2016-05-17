@@ -1,0 +1,58 @@
+﻿@model AutotinklasInformacinėSistema.Darbuotojas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Darbuotojas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.pavarde)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pavarde)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vardas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vardas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.adresas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.adresas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefonas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefonas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Padalinys.adresas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Padalinys.adresas)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
